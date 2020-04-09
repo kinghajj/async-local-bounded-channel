@@ -1,0 +1,17 @@
+[package]
+name = "async-local-bounded-channel"
+version = "0.1.0"
+authors = ["Samuel Fredrickson <samfredrickson@gmail.com>"]
+description = "A same-producer, same-consumer bounded channel, for a single async task."
+keywords = ["async", "channel", "bounded", "single-task", "single-threaded"]
+edition = "2018"
+license = "MIT"
+
+[dependencies]
+futures = { version = "0.3", default-features = false }
+generic-array = "0.13"
+
+[dev-dependencies]
+crossbeam = "0.7"
+futures = { version = "0.3", default-features = true }
+typenum = "1.11"
